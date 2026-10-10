@@ -30,9 +30,19 @@ h1{font-size:clamp(2.3rem,6.6vw,4.1rem);font-weight:normal;line-height:1.12;marg
 @media(max-height:650px){.cake-wrap{transform:scale(.8);margin:-29px auto -35px}h1{font-size:clamp(2rem,5vw,3rem)}}
 @media(prefers-reduced-motion:reduce){*,*::after,*::before{animation:none!important}}
 
-/* Keep greeting safely above the candle flames */
-h1{position:relative;top:-30px}
-@media(max-width:480px){h1{top:-22px}}
+/* Reserve real space between the heading and the candle flames.
+   Relative top offsets were only visual and did not change layout spacing. */
+h1{position:static;margin-bottom:74px}
+.cake-wrap{margin-top:0}
+/* Allow scrolling on short screens instead of crushing the cake and title together. */
+body{overflow-x:hidden;overflow-y:auto}
+@media(max-height:650px){
+  .cake-wrap{margin:0 auto 10px;transform:none}
+  h1{margin-bottom:78px}
+  .scene{padding-top:35px;padding-bottom:35px}
+}
+@media(max-width:480px){h1{margin-bottom:74px}}
+
 
 /* Animated cake entrance, dreamy floating details, and gentle celebration */
 h1{animation:titlePop 1.3s cubic-bezier(.2,1.4,.3,1) both, titleGlow 3s ease-in-out 1.3s infinite alternate}
