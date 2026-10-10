@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Lesly!</title>
+<style>
+:root{--cream:#fff3e5;--rose:#ff8db0;--pink:#ffc0d5;--icing:#fff0f5;--cake:#f2a2a9;--purple:#ad87dd}
+*{box-sizing:border-box}html,body{min-height:100%;margin:0}body{display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#30213c 0%,#1a1426 52%,#0f1020 100%);font-family:Georgia,'Times New Roman',serif;color:var(--cream)}
+.scene{position:relative;width:100%;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:35px 15px 45px;isolation:isolate}
+.scene:before{content:"";position:absolute;inset:-30%;z-index:-2;background:radial-gradient(circle at center,#e77ead13,transparent 48%);pointer-events:none}
+.content{width:min(100%,610px);position:relative;z-index:2;animation:appear 1.1s ease both}
+.sparkles{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:0}.spark{position:absolute;color:#fff1b8;font-size:clamp(12px,2vw,25px);opacity:.82;animation:twinkle var(--dur,3s) ease-in-out infinite alternate;animation-delay:var(--delay,0s);filter:drop-shadow(0 0 8px #ffcaca88)}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(.7) rotate(-12deg)}50%{opacity:1;transform:scale(1.15) rotate(12deg)}}
+@keyframes appear{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+h1{font-size:clamp(2.3rem,6.6vw,4.1rem);font-weight:normal;line-height:1.12;margin:7px 0 5px;color:#ffe9f3;text-shadow:0 0 32px #fb79b655;letter-spacing:.015em}
+.line{font-family:Arial,sans-serif;font-size:clamp(15px,2.5vw,18px);letter-spacing:.14em;font-weight:300;color:#fbdbe8;margin:15px 0 0}
+.cake-wrap{position:relative;width:330px;height:325px;max-width:100%;margin:2px auto 10px;filter:drop-shadow(0px 24px 25px #07050b88)}
+.cake-glow{position:absolute;left:15%;right:15%;height:50px;bottom:35px;border-radius:50%;background:#e77daf5c;filter:blur(28px)}
+.plate{position:absolute;width:296px;height:33px;left:50%;bottom:35px;transform:translateX(-50%);border-radius:50%;background:linear-gradient(180deg,#fdf7fb 10%,#d7b8dc 75%,#ae84b9);box-shadow:0 8px 0 #7f5c86,0 12px 17px #0003}
+.tier{position:absolute;left:50%;transform:translateX(-50%);border-radius:13px 13px 22px 22px}
+.bottom{width:255px;height:106px;bottom:55px;background:linear-gradient(90deg,#dc7d96,#ffb5c5 35%,#ef8ba5 75%,#cf6d90);box-shadow:inset 0 -15px 0 #da7291}
+.top{width:194px;height:100px;bottom:146px;background:linear-gradient(90deg,#cb7cb4,#e6a2d1 35%,#d68bc0 75%,#b96ca7);box-shadow:inset 0 -13px 0 #c67cb0}
+.tier::after{content:"";position:absolute;top:-12px;left:0;width:100%;height:30px;border-radius:50%;background:var(--icing);box-shadow:0 5px 0 #f8dce9}
+.drip{position:absolute;top:6px;width:17px;background:var(--icing);border-radius:0 0 15px 15px;z-index:2}.bottom .drip:nth-child(1){left:18px;height:38px}.bottom .drip:nth-child(2){left:71px;height:23px}.bottom .drip:nth-child(3){left:139px;height:37px}.bottom .drip:nth-child(4){left:211px;height:26px}.top .drip:nth-child(1){left:22px;height:29px}.top .drip:nth-child(2){left:76px;height:42px}.top .drip:nth-child(3){left:150px;height:26px}
+.pearls{position:absolute;bottom:16px;left:5%;width:90%;display:flex;justify-content:space-around}.pearls span{width:9px;height:9px;border-radius:50%;background:#ffe6ba;box-shadow:0 0 6px #fff0cd88}
+.candles{position:absolute;left:50%;bottom:235px;transform:translateX(-50%);display:flex;gap:21px;align-items:end;z-index:4}.candle{height:59px;width:15px;border-radius:4px 4px 2px 2px;position:relative;background:repeating-linear-gradient(145deg,#fef5e1 0px,#fef5e1 7px,#f6a3c0 7px,#f6a3c0 12px);box-shadow:inset -3px 0 3px #9c52743c}.candle:nth-child(2){height:69px;background:repeating-linear-gradient(145deg,#fef5e1 0px,#fef5e1 7px,#ba96e4 7px,#ba96e4 12px)}.candle:nth-child(3){height:59px;background:repeating-linear-gradient(145deg,#fef5e1 0px,#fef5e1 7px,#9ad9d5 7px,#9ad9d5 12px)}
+.wick{position:absolute;width:2px;height:9px;background:#594051;bottom:100%;left:7px}.flame{position:absolute;width:15px;height:24px;background:radial-gradient(circle at 50% 72%,#fffada 0 25%,#ffd26e 35%,#ff914a 70%,#fa6545 100%);bottom:calc(100% + 7px);left:0;border-radius:80% 0 65% 60%;transform:rotate(45deg);box-shadow:0 0 18px 7px #ffc75b66;animation:flicker .9s ease-in-out infinite alternate;transform-origin:bottom center}.candle:nth-child(2) .flame{animation-delay:-.4s}.candle:nth-child(3) .flame{animation-delay:-.65s}
+@keyframes flicker{from{transform:rotate(38deg) scale(.88);opacity:.84}to{transform:rotate(50deg) scale(1.1);opacity:1}}
+.from{font-family:Arial,Helvetica,sans-serif;font-size:clamp(16px,3.3vw,20px);letter-spacing:.09em;color:#ffd5e6;margin-top:11px}
+@media(max-height:650px){.cake-wrap{transform:scale(.8);margin:-29px auto -35px}h1{font-size:clamp(2rem,5vw,3rem)}}
+@media(prefers-reduced-motion:reduce){*,*::after,*::before{animation:none!important}}
+
+/* Animated cake entrance, dreamy floating details, and gentle celebration */
+h1{animation:titlePop 1.3s cubic-bezier(.2,1.4,.3,1) both, titleGlow 3s ease-in-out 1.3s infinite alternate}
+@keyframes titlePop{from{opacity:0;transform:translateY(-25px) scale(.75)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes titleGlow{from{text-shadow:0 0 12px #ff8db055}to{text-shadow:0 0 27px #ffb9d6,0 0 52px #ff78ba77}}
+.cake-wrap{animation:cakeEntrance 1.6s cubic-bezier(.2,1.2,.3,1) .35s both, cakeFloat 3.5s ease-in-out 2s infinite}
+@keyframes cakeEntrance{from{opacity:0;transform:translateY(130px) scale(.65)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes cakeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-11px)}}
+.from{animation:signatureIn 1.3s ease 1.5s both}
+@keyframes signatureIn{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.plate{animation:plateShine 4s ease-in-out infinite alternate}
+@keyframes plateShine{from{filter:brightness(1)}to{filter:brightness(1.25)}}
+.floating{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.float-item{position:absolute;bottom:-10%;left:var(--x);font-size:var(--s);color:var(--c);opacity:0;animation:rise var(--t) linear var(--d) infinite;filter:drop-shadow(0 0 7px #ffb7d388)}
+@keyframes rise{0%{transform:translate3d(0,0,0) rotate(-20deg);opacity:0}10%{opacity:.65}83%{opacity:.65}100%{transform:translate3d(var(--drift),-115vh,0) rotate(35deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.float-item{display:none}}
+</style>
+</head>
+<body>
+<main class="scene">
+<div class="sparkles" aria-hidden="true">
+<span class="spark" style="left:9%;top:15%;--delay:-.3s">✦</span><span class="spark" style="left:21%;top:34%;--dur:3.8s">✧</span><span class="spark" style="left:81%;top:14%;--delay:-1.3s">✦</span><span class="spark" style="left:91%;top:39%;--delay:-2s">✧</span><span class="spark" style="left:14%;top:68%;--delay:-1.7s">✧</span><span class="spark" style="left:88%;top:76%;--dur:4s">✦</span><span class="spark" style="left:34%;top:9%;--delay:-1s">✧</span><span class="spark" style="left:70%;top:88%;--delay:-2.3s">✧</span><span class="spark" style="left:56%;top:8%;--delay:-.6s">✦</span><span class="spark" style="left:6%;top:92%;--delay:-1.2s">✦</span>
+</div>
+<div class="floating" aria-hidden="true"><span class="float-item" style="--x:11%;--s:12px;--t:8s;--d:-0.0s;--drift:-65px;--c:#ffaccb">♥</span><span class="float-item" style="--x:48%;--s:19px;--t:11s;--d:-14.9s;--drift:-46px;--c:#ffe3ab">✦</span><span class="float-item" style="--x:85%;--s:12px;--t:14s;--d:-12.7s;--drift:-27px;--c:#ecc8ff">♡</span><span class="float-item" style="--x:24%;--s:19px;--t:8s;--d:-10.6s;--drift:-8px;--c:#ffaccb">✧</span><span class="float-item" style="--x:61%;--s:12px;--t:11s;--d:-8.5s;--drift:11px;--c:#ffe3ab">♥</span><span class="float-item" style="--x:0%;--s:19px;--t:14s;--d:-6.4s;--drift:30px;--c:#ecc8ff">✦</span><span class="float-item" style="--x:37%;--s:12px;--t:8s;--d:-4.2s;--drift:49px;--c:#ffaccb">♡</span><span class="float-item" style="--x:74%;--s:19px;--t:11s;--d:-2.1s;--drift:-62px;--c:#ffe3ab">✧</span><span class="float-item" style="--x:13%;--s:12px;--t:14s;--d:-17.0s;--drift:-43px;--c:#ecc8ff">♥</span><span class="float-item" style="--x:50%;--s:19px;--t:8s;--d:-14.8s;--drift:-24px;--c:#ffaccb">✦</span><span class="float-item" style="--x:87%;--s:12px;--t:11s;--d:-12.7s;--drift:-5px;--c:#ffe3ab">♡</span><span class="float-item" style="--x:26%;--s:19px;--t:14s;--d:-10.6s;--drift:14px;--c:#ecc8ff">✧</span><span class="float-item" style="--x:63%;--s:12px;--t:8s;--d:-8.4s;--drift:33px;--c:#ffaccb">♥</span><span class="float-item" style="--x:2%;--s:19px;--t:11s;--d:-6.3s;--drift:52px;--c:#ffe3ab">✦</span><span class="float-item" style="--x:39%;--s:12px;--t:14s;--d:-4.2s;--drift:-59px;--c:#ecc8ff">♡</span><span class="float-item" style="--x:76%;--s:19px;--t:8s;--d:-2.1s;--drift:-40px;--c:#ffaccb">✧</span><span class="float-item" style="--x:15%;--s:12px;--t:11s;--d:-16.9s;--drift:-21px;--c:#ffe3ab">♥</span><span class="float-item" style="--x:52%;--s:19px;--t:14s;--d:-14.8s;--drift:-2px;--c:#ecc8ff">✦</span><span class="float-item" style="--x:89%;--s:12px;--t:8s;--d:-12.7s;--drift:17px;--c:#ffaccb">♡</span><span class="float-item" style="--x:28%;--s:19px;--t:11s;--d:-10.5s;--drift:36px;--c:#ffe3ab">✧</span><span class="float-item" style="--x:65%;--s:12px;--t:14s;--d:-8.4s;--drift:55px;--c:#ecc8ff">♥</span><span class="float-item" style="--x:4%;--s:19px;--t:8s;--d:-6.3s;--drift:-56px;--c:#ffaccb">✦</span><span class="float-item" style="--x:41%;--s:12px;--t:11s;--d:-4.1s;--drift:-37px;--c:#ffe3ab">♡</span><span class="float-item" style="--x:78%;--s:19px;--t:14s;--d:-2.0s;--drift:-18px;--c:#ecc8ff">✧</span></div>
+<section class="content" aria-label="Birthday greeting for Lesly">
+<h1>Happy Birthday, Lesly!</h1>
+<div class="cake-wrap" role="img" aria-label="A two-tier pink birthday cake topped with three glowing candles">
+<div class="cake-glow"></div><div class="plate"></div>
+<div class="tier bottom"><span class="drip"></span><span class="drip"></span><span class="drip"></span><span class="drip"></span><div class="pearls"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+<div class="tier top"><span class="drip"></span><span class="drip"></span><span class="drip"></span><div class="pearls"><span></span><span></span><span></span><span></span><span></span></div></div>
+<div class="candles"><div class="candle"><span class="wick"></span><span class="flame"></span></div><div class="candle"><span class="wick"></span><span class="flame"></span></div><div class="candle"><span class="wick"></span><span class="flame"></span></div></div>
+</div>
+<p class="from">From: Papa &amp; Family</p>
+</section>
+</main>
+<script>
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const scene=document.querySelector('.scene');
+  const colors=['#ffc0d5','#fff0b8','#c7a8ef','#ffd4e9','#a1e2d5'];
+  function burst(){
+    for(let i=0;i<45;i++){
+      const bit=document.createElement('span');
+      bit.style.cssText=`position:absolute;left:${15+Math.random()*70}%;top:-20px;width:${5+Math.random()*6}px;height:${8+Math.random()*9}px;background:${colors[i%colors.length]};border-radius:2px;z-index:3;pointer-events:none;opacity:.95;`;
+      scene.appendChild(bit);
+      const dx=(Math.random()-.5)*240,spin=(Math.random()-.5)*900;
+      const motion=bit.animate([{transform:'translate(0,0) rotate(0deg)',opacity:1},{transform:`translate(${dx}px,105vh) rotate(${spin}deg)`,opacity:0}],{duration:3500+Math.random()*2400,easing:'ease-in',delay:Math.random()*900});
+      motion.onfinish=()=>bit.remove();
+    }
+  }
+  setTimeout(burst,850);
+  document.querySelector('.cake-wrap').addEventListener('click',burst);
+})();
+</script></body></html>
